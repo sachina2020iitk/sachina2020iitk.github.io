@@ -5,79 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sachin Anand's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Sachin Anand</h1>
-        <p>Innovative software engineer with a strong background in developing scalable and efficient solutions.</p>
+        <div class="container">
+            <h1>Sachin Anand</h1>
+            <p>Innovative Software Engineer</p>
+            <nav>
+                <ul>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <ul>
-            <li>Phone: +91 930-412-4398</li>
-            <li>Email: <a href="mailto:sachina2020@iitkalumni.org">sachina2020@iitkalumni.org</a></li>
-        </ul>
-    </section>
-    <section id="profile">
-        <h2>Profile</h2>
-        <p>Proficient in a range of technologies, including Java, Spring Boot, PostgreSQL, Docker, JavaScript, React, and Gatsby. Experienced in leading startups and building AI-driven platforms. Adept at serverless architecture, agile methodologies, and team collaboration.</p>
-    </section>
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Co-Founder, PUREFOODSDELHI.COM (Oct 2023-Present)</h3>
+    
+    <main>
+        <section id="profile" class="container">
+            <h2>Profile</h2>
+            <p>Innovative software engineer with a strong background in developing scalable and efficient solutions. Proficient in a range of technologies, including Java, Spring Boot, PostgreSQL, Docker, JavaScript, React, and Gatsby. Experienced in leading startups and building AI-driven platforms. Adept at serverless architecture, agile methodologies, and team collaboration.</p>
+        </section>
+        
+        <section id="experience" class="container">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Co-Founder, PUREFOODSDELHI.COM (Oct 2023-Present)</h3>
+                <ul>
+                    <li>Built a full-stack website using the Serverless framework and JavaScript for the backend, with DynamoDB as the database.</li>
+                    <li>On-boarded various businesses and factory owners, focusing on selling female footwear and organic grocery.</li>
+                    <li>Hired and managed a team of MCA interns to develop a Flutter app for both Android and iOS.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Co-Founder, ASBDESIGN.IN (Mar 2023-Oct 2023)</h3>
+                <ul>
+                    <li>Launched an Ed-Tech platform for skilling and employing people, irrespective of their background.</li>
+                    <li>Developed a basic mobile app using Flutter for both Android and iOS.</li>
+                    <li>Utilized Generative AI for course creation. Showcased the product at an exhibition organized by AIC-IIT Delhi Incubation Centre, Sonepat.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Co-Founder, COINSLIVE.ORG (Aug 2022-Mar 2023)</h3>
+                <ul>
+                    <li>Focused on educating people about Blockchain technology and cryptography to promote decentralization.</li>
+                    <li>Created a website using Gatsby and Sanity Content Management System (CMS), and a secondary WordPress site.</li>
+                    <li>Developed a commenting system for CoinsLive.org using the Serverless framework and Amazon DynamoDB.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Software Developer, CONTATA SOLUTIONS (Aug 2021-Aug 2022)</h3>
+                <ul>
+                    <li>Developed a client application from scratch to release as part of a small team.</li>
+                    <li>Collaborated with cross-functional teams to identify and prioritize project requirements.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills" class="container">
+            <h2>Skills</h2>
             <ul>
-                <li>Built a full-stack website using the Serverless framework and JavaScript for the backend, with DynamoDB as the database. Implemented an event-driven architecture with microservices, such as triggering email functions on new account creation.</li>
-                <li>On-boarded various businesses and factory owners, focusing on selling female footwear and organic grocery. Conducted SEO for the website, achieving a traffic rate of around 10k monthly.</li>
-                <li>Hired and managed a team of MCA interns to develop a Flutter app for both Android and iOS. The backend was built using Node.js, and MongoDB was used for the database. Integrated Razorpay for payments and fine-tuned ChatGPT for a chat-bot using our database.</li>
+                <li><strong>Frontend:</strong> Typescript, ReactJS, GatsbyJS, NextJS, ChakraUI, Tailwind, CSS</li>
+                <li><strong>Mobile:</strong> Flutter, React-Native, Jetpack-Compose</li>
+                <li><strong>Backend:</strong> Javascript, NodeJS, GO, Java, Spring Boot, Python, Django, Flask, PHP</li>
+                <li><strong>Database:</strong> Amazon DynamoDB, MongoDB, Neo4j, Firestore, PostgreSQL</li>
+                <li><strong>API Design:</strong> GraphQL, REST</li>
+                <li><strong>DevOps:</strong> Docker, Docker-compose, Kubernetes, Jenkins, GitLab, Git, Github-actions, Cloud Formation, Serverless, Google App Engine, AWS EC2, AWS Lambda, AWS Gateway, AWS Cognito etc.</li>
+                <li><strong>Clouds and Hosting:</strong> Amazon Web Services (AWS), Google Cloud Platform (GCP), Firebase, CloudFlare, Netlify, Vercel, WordPress</li>
+                <li><strong>AI/ML:</strong> GPT4, ClaudeAI, Llama3, Hugging Face, Amazon Bedrock, Vector Database, LangChain, PyTorch, TensorFlow</li>
+                <li><strong>Blockchain:</strong> Hyperledger, Etheruem, Bitcoin, Solidity, Hardhat, Ganache, Web3.js, Metamask Wallet, Coinbase Wallet</li>
+                <li><strong>Other skills:</strong> Team Management, Startup Leadership, Public Speaking, E-commerce development</li>
             </ul>
-        </div>
-        <div class="job">
-            <h3>Co-Founder, ASBDESIGN.IN (Mar 2023-Oct 2023)</h3>
-            <ul>
-                <li>Launched an Ed-Tech platform for skilling and employing people, irrespective of their background. The platform included a competitive design section where users could learn design skills and rank based on assignment completion.</li>
-                <li>Developed a basic mobile app using Flutter for both Android and iOS. Backend was written in GoLang, with MongoDB for the database. The web frontend was developed using ReactJS.</li>
-                <li>Utilized Generative AI for course creation. Showcased the product at an exhibition organized by AIC-IIT Delhi Incubation Centre, Sonepat.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Co-Founder, COINSLIVE.ORG (Aug 2022-Mar 2023)</h3>
-            <ul>
-                <li>Focused on educating people about Blockchain technology and cryptography to promote decentralization. Created a website using Gatsby and Sanity Content Management System (CMS), and a secondary WordPress site, achieving a combined traffic of 1000 daily users.</li>
-                <li>Developed a commenting system for CoinsLive.org using the Serverless framework and Amazon DynamoDB. Built dynamic informational pages with Next.js and multiple dApps. Hosted a Hyperledger Fabric on Amazon Managed Blockchain.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Software Developer, CONTATA SOLUTIONS (Aug 2021-Aug 2022)</h3>
-            <ul>
-                <li>Developed a client application from scratch to release as part of a small team, utilizing technologies like Java, Spring Boot, PostgreSQL, Angular, and Docker.</li>
-                <li>Collaborated with cross-functional teams to identify and prioritize project requirements.</li>
-            </ul>
-        </div>
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Frontend:</strong> Typescript, ReactJS, GatsbyJS, NextJS, ChakraUI, Tailwind, CSS</li>
-            <li><strong>Mobile:</strong> Flutter, React-Native, Jetpack-Compose</li>
-            <li><strong>Backend:</strong> Javascript, NodeJS, GO, Java, Spring Boot, Python, Django, Flask, PHP</li>
-            <li><strong>Database:</strong> Amazon DynamoDB, MongoDB, Neo4j, Firestore, PostgreSQL</li>
-            <li><strong>API Design:</strong> GraphQL, REST</li>
-            <li><strong>DevOps:</strong> Docker, Docker-compose, Kubernetes, Jenkins, GitLab, Git, Github-actions, Cloud Formation, Serverless, Google App Engine, AWS EC2, AWS Lambda, AWS Gateway, AWS Cognito etc.</li>
-            <li><strong>Clouds and Hosting:</strong> Amazon Web Services (AWS), Google Cloud Platform (GCP), Firebase, CloudFlare, Netlify, Vercel, WordPress</li>
-            <li><strong>AI/ML:</strong> GPT4, ClaudeAI, Llama3, Hugging Face, Amazon Bedrock, Vector Database, LangChain, PyTorch, TensorFlow</li>
-            <li><strong>Blockchain:</strong> Hyperledger, Etheruem, Bitcoin, Solidity, Hardhat, Ganache, Web3.js, Metamask Wallet, Coinbase Wallet</li>
-            <li><strong>Other skills:</strong> Team Management, Startup Leadership, Public Speaking, E-commerce development</li>
-        </ul>
-    </section>
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>B.Tech in Mechanical Engineering (2016-2020)</strong><br>Indian Institute of Technology, Kanpur</p>
-        <p><strong>Class 10th & 12th (2013 & 2015)</strong><br>Goodley Public School, New Delhi, CBSE Board</p>
-    </section>
+        </section>
+
+        <section id="education" class="container">
+            <h2>Education</h2>
+            <p><strong>B.Tech in Mechanical Engineering (2016-2020)</strong><br>
+            Indian Institute of Technology, Kanpur</p>
+            <p><strong>Class 10th & 12th (2013 & 2015)</strong><br>
+            Goodley Public School, New Delhi, CBSE Board</p>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <p><strong>Phone:</strong> +91 930-412-4398</p>
+            <p><strong>Email:</strong> <a href="mailto:sachina2020@iitkalumni.org">sachina2020@iitkalumni.org</a></p>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2024 Sachin Anand</p>
+        <div class="container">
+            <p>&copy; 2024 Sachin Anand. All rights reserved.</p>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
